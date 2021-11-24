@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* VARIABLES */
+:root{
+    --space-top: 33px;
+    --space-bottom: 33px;
+    --space-left: 53px;
+    --space-right: 53px;
+
+    --color-GreenPea: #27634C ;
+    --color-ScienceBlue: #0068C4; 
+    --color-Blanco-BlackHaze: #F4F6F6 ;
+    --color-GullGray: #9BB3B8;
+    --color-BreakerBay: #6099A6;
+}
+*{
+    font-family: 'Heebo';
+}
+p,h1,h2,h3,h4,h5 { text-align: center;}
+.h5-title-category{
+    color: var(--color-Blanco-BlackHaze);
+}
+li a{
+    font-family: 'Heebo';
+}
+body{
+    overflow-x: hidden;
+    /* background-image: url("https://www.desafiofrisona.com/d3sfr1/wp-content/uploads/2020/02/Leche1-2400x1200.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--color-Blanco-BlackHaze);
+
+}
+.navbar{
+    padding-left: var(--space-left);
+    padding-right: var(--space-right);
+    /* background-color: rgba(117, 117, 117, 40%); 40& */
+    background-color: var(--color-Blanco-BlackHaze) /* 40& */
+}
+.navbar-toggler{
+    color: rgb(255, 255, 255);
+    border-color: white;
+}
+a, .nav-link{
+    /* color: #ffffff; text-decoration: none; */
+    color: #121212d0; text-decoration: none;
+}   
+.nav-link:hover{
+    /* color: #dfdfdfe3; */
+    color: #121212; 
+    text-decoration:underline;
+}
+ul > li{
+    margin-left: 11px;
+    margin-right: 11px;
+}
+.form-control{
+    border-color: #12121265;
+}
+.form-control:focus{
+    border-color: var(--color-BreakerBay);
+    box-shadow: 0 1px 1px  var(--color-BreakerBay) inset, 0 0 8px  var(--color-BreakerBay);
+    outline: 0 none;
+}
+
+.content-box{
+    padding-left: var(--space-left);
+    padding-right: var(--space-right);
+    padding-top: var(--space-top);
+    padding-bottom: var(--space-bottom);
+   /*  margin-top: var(--space-left); */
+    background-color: var(--color-BreakerBay);
+   
+}
+.content-preview-products{
+    padding-left: var(--space-left);
+    padding-right: var(--space-right);
+    padding-top: var(--space-top);
+    padding-bottom: var(--space-bottom);
+   /*  margin-top: var(--space-left); */
+    background-color: var(--color-Blanco-BlackHaze);
+    height: 50vh;
+}
+.text-home-introduction{
+    /* background-color: blue;
+    margin-left: calc(100vw / 90);
+    margin-right: calc(100vw / 90); */
+    text-align: center;
+    font-size: 1.005vw;
+    margin-bottom: calc(var(--space-bottom) - 10px);     
+}
+.col-home-categories,.col-home-products, .col-home-introduction{
+    text-align: center;
+}
+.col-home-products img{
+    background-size: cover;
+}
+.col-home-products .card{
+    width: 18rem;
+    margin: 0 auto;
+    background-color: #12121200;
+    border: 0px;
+    margin-bottom: var(--space-bottom);
+}
+.col-home-categories img{
+    margin-bottom: 15px;
+}
+.content-box h2, .content-box p{
+    color: var(--color-Blanco-BlackHaze);
+}
+.card-home-product{
+    height: 200px;
+}
+.col-home-button .btn-home-more{
+    margin: 0 auto;
+    background-color: var(--color-BreakerBay);
+    color: var(--color-Blanco-BlackHaze);
+}
+
+.btn-home-more:focus{
+    border-color: var(--color-GullGray);
+    box-shadow: 0 0 0  var(--color-ScienceBlue) inset, 0 0 15px  var(--color-ScienceBlue);
+    outline: 0 none;
+}
+
+.acciones-container .title{
+    margin-top: var(--space-top);
+    margin-bottom: var(--space-bottom);
+}
+button .title-alimentacion  {
+    align-items: center;
+}
+.acciones-info{
+    text-align: left;
+}
+
+.alert-add{
+    z-index: 1000;
+    position:fixed;
+	width:auto;
+	height:60px;
+	top:125px;
+	right:20px;
+	background-color: #348666;
+	color:#FFF;
+	border-radius:10px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+/*para gps*/
+#map-template{
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    background: #333333;
+  } 
